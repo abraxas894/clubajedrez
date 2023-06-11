@@ -1,0 +1,450 @@
+:root{
+    --negro: #191919;
+    --blanco: #fbffff;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--blanco);
+}
+h1{
+    font: normal 8em/1em "UnifrakturMaguntia", serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font: normal 3em/1.2em "Mate SC", serif;
+    text-align: right;
+    background-color: #00008b;
+    color: var(--blanco);
+    margin: 2% 0%;
+    padding: 1% 5%;
+}
+h3{
+    font: normal 2.5em/1.2em "Mate SC", serif;
+}
+h4{
+    font: normal 2em/1.2em "Mate", serif;
+}
+p{
+    font: normal 3em/1.2em "Mate", serif;
+}
+pre{
+    font: normal 2em/1.2em "Mate", serif;
+}
+.cajaContenido{
+    width: 90%;
+    margin: 0% 5%;
+    background-color: var(--blanco);
+}
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--negro);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d3/Albrecht_De_Vriendt_-_His_move.jpeg);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: exclusion;
+}
+header .transparencia{
+    background-color: var(--negro);
+    mix-blend-mode: soft-light;
+    padding: 2% 5%;
+    color: var(--blanco);
+}
+header h1{
+    text-align: center;
+}
+header p{
+    margin: 0;
+    font: normal 2em/1.2em "Mate SC", serif;
+    text-align: center;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    padding: 1% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--negro);
+    position: sticky;
+    top: 0;    
+}
+nav div a{
+    height: 100%;
+    font: normal 2em/1.2em "Mate", serif;
+    text-decoration-line: none;
+    padding: 10% 0%;
+    color: var(--blanco);
+}
+nav div a:hover{
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+.lema{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lema p{
+    width: 50%;
+    font: normal 6em/1.2em "Mate", serif;
+}
+.lema div{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.lema div p{
+    width: 25%;
+    color: var(--blanco);
+    background-color: var(--negro);
+    text-align: center;
+    margin: 0;
+}
+.lema div p:nth-child(2n){
+    color: var(--negro);
+    background-color: var(--blanco);
+    text-align: center;
+}
+#club{
+    width: 100%;
+}
+.sobreClub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sobreClub p{
+    font-size: 3em;
+    width: 50%;
+    text-align: right; 
+}
+.sobreClub img{
+    width: 40%;
+}
+#membresia{
+    width: 100%;
+}
+#membresia h2{
+    text-align: left;
+    background-color: #8b0000;
+}
+.sobreMembre{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sobreMembre p{
+    width: 50%;
+}
+.sobreMembre img{
+    width: 40%;
+}
+#historia{
+    width: 100%;
+}
+#historia h2{
+    background-color: #008b00;
+}
+.cajaHistoria{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cajaHistoria p{
+    width: 50%;
+    text-align: right;
+}
+.cajaHistoria img{
+    width: 40%;
+}
+#ajlit h2{
+    background-color: #8b008b;
+    text-align: left;
+}
+.cajaLit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.cajaLit figure{
+    width: 40%;
+}
+.cajaLit figure img{
+    width: 90%;
+    border-style: solid;
+    border-color: ;
+    border-width: 20px 0px 0px 10px;
+}
+.cajaLit figure figcaption{
+    width: 90%;
+    padding: 2%;
+    font: normal 1.5em/1.2em "Mate", serif;
+    text-align: center;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+.cajaLit pre{
+    width: 50%;
+}
+.fondoFooter{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+#contacto h2{
+    background-image: linear-gradient(25deg, #00FA9A, #cc00cc);
+}
+#contacto iframe{
+    width: 100%;
+    border-radius: 0% 0% 50% 50%;
+}
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: var(--negro);
+    color: #00FA9A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    margin: 0;
+}
+footer .social a{
+    font-size: 3em;
+    margin: 0;
+    text-align: center;
+    padding: 0% 2%;
+    color: var(--blanco);
+}
+@media only screen and (max-width: 760px){
+    h1{
+        font: normal 5em/1em "UnifrakturMaguntia", serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    h2{
+        font: normal 2em/1.2em "Mate SC", serif;
+        text-align: right;
+        background-color: #00008b;
+        color: var(--blanco);
+        margin: 2% 0%;
+        padding: 1% 5%;
+    }
+    p{
+        font: normal 1.2em/1.2em "Mate", serif;
+    }
+    pre{
+        font: normal 1.2em/1.2em "Mate", serif;
+    }
+    .cajaContenido{
+        width: 90%;
+        margin: 0% 5%;
+        background-color: var(--blanco);
+    }
+    header{
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--negro);
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d3/Albrecht_De_Vriendt_-_His_move.jpeg);
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-blend-mode: exclusion;
+    }
+    header .transparencia{
+        background-color: var(--negro);
+        mix-blend-mode: soft-light;
+        padding: 2% 3%;
+        color: var(--blanco);
+    }
+    header h1{
+        text-align: center;
+    }
+    nav{
+        width: 100%;
+        height: 5hv;
+        padding: 0% 0%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--negro);
+        position: sticky;
+        top: 0;    
+    }
+    nav div a{
+        height: 100%;
+        font: normal .8em/1em "Mate", serif;
+        text-decoration-line: none;
+        padding: 5% 0%;
+        color: var(--blanco);
+    }
+    nav div a:hover{
+        background-color: var(--blanco);
+        color: var(--negro);
+    }
+    .lema{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .lema p{
+        width: 40%;
+        font: normal 2em/1.2em "Mate", serif;
+    }
+    .lema div{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+    .lema div p{
+        width: 25%;
+        color: var(--blanco);
+        background-color: var(--negro);
+        text-align: center;
+        margin: 0;
+    }
+    .lema div p:nth-child(2n){
+        color: var(--negro);
+        background-color: var(--blanco);
+        text-align: center;
+    }
+    #club{
+        width: 100%;
+    }
+    .sobreClub{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: column-reverse;
+    }
+    .sobreClub p{
+        font-size: 1.2em;
+        width: 100%;
+        text-align: right; 
+    }
+    .sobreClub img{
+        width: 100%;
+    }
+    #membresia h2{
+        text-align: left;
+        background-color: #8b0000;
+    }
+    .sobreMembre{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sobreMembre p{
+        width: 100%;
+    }
+    .sobreMembre img{
+        width: 100%;
+    }
+    #historia{
+        width: 100%;
+    }
+    #historia h2{
+        background-color: #008b00;
+    }
+    .cajaHistoria{
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cajaHistoria p{
+        width: 100%;
+        text-align: right;
+    }
+    .cajaHistoria img{
+        width: 100%;
+    }
+    #ajlit h2{
+        background-color: #8b008b;
+        text-align: left;
+    }
+    .cajaLit {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cajaLit figure{
+        width: 100%;
+    }
+    .cajaLit figure img{
+        width: 100%;
+        border-style: solid;
+        border-color: ;
+        border-width: 20px 0px 0px 10px;
+    }
+    .cajaLit figure figcaption{
+        width: 100%;
+        padding: 2%;
+        font: normal 1.2em/1.2em "Mate", serif;
+        text-align: center;
+        background-color: var(--negro);
+        color: var(--blanco);
+    }
+    .cajaLit pre{
+        width: 100%;
+    }
+    .fondoFooter{
+        background-color: var(--negro);
+        color: var(--blanco);
+    }
+    #contacto h2{
+        background-image: linear-gradient(25deg, #00FA9A, #cc00cc);
+    }
+    #contacto iframe{
+        width: 100%;
+        border-radius: 0% 0% 0% 0%;
+    }
+    footer{
+        width: 100%;
+        height: 30vh;
+        background-color: var(--negro);
+        color: #fafaff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer p{
+        margin: 0% 2%;
+        font-size: 1.2em;
+    }
+    footer .social a{
+        font-size: 1.2em;
+        margin: 0;
+        text-align: center;
+        padding: 0% 2%;
+        color: #ff00ff;
+    }
+}
